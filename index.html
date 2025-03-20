@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="palette.js"></script>
+</head>
+
+<body>
+
+    <h2>Painterly</h2>
+    <div class="toolbar">
+        <label>Color:</label>
+        <input type="color" id="colorPicker">
+        <label>Brush Size:</label>
+        <input type="range" id="brushSize" min="2" max="20" value="5">
+        <button id="brush">Brush</button>
+        <button id="rectangle">Rectangle</button>
+        <button id="circle">Circle</button>
+        <button id="line">Line</button>
+        <button id="eraser">Eraser</button>
+        <button onclick="clearCanvas()">Clear</button>
+        <button id="saveImage">Save as Image</button>
+        <button id="eyedropper">Eyedropper</button>
+    </div>
+    <canvas id="paintCanvas" width="800" height="500"></canvas>
+    <div id="paletteContainer" style="text-align: center;">
+        <h3>Color Palette</h3>
+        <div id="palette"></div>
+    </div>
+
+</body>
+
+</html>
